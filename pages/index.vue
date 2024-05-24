@@ -178,7 +178,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-cover pb-72" style="background-image: url(./curvedsec.png)">
+    <div class="bg-no-repeat bg-center bg-cover bg-[#E89C66]">
       <div class="max-w-7xl mx-auto lg:px-4 pt-20 pb-28 px-5 sm:px-6">
         <div class="max-w-5xl mx-auto">
           <div class="max-w-3xl mx-auto text-center">
@@ -218,10 +218,10 @@
             >
               <div class="bg-[#EC6A5E] h-3 w-3 rounded-full absolute"></div>
               <div
-                class="bg-[#F5BE4E] h-3 w-3 ml-6 rounded-full absolute"
+                class="bg-[#F5BE4E] h-3 w-3 left-8 rounded-full absolute"
               ></div>
               <div
-                class="bg-[#61C655] h-3 w-3 ml-12 rounded-full absolute"
+                class="bg-[#61C655] h-3 w-3 left-12 rounded-full absolute"
               ></div>
             </div>
           </div>
@@ -248,46 +248,51 @@
             </p>
           </div>
         </div>
-        <div class="pt-40">
-          <div
-            class="bg-cover w-full text-center max-w-7xl mx-auto px-10 pt-20 pb-52 sm:pb-40 md:pb-24"
-            style="background-image: url(./sectionhome.png)"
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div class="bg bg-contain z-50 relative pb-40 pt-20 bg-no-repeat">
+      <div
+        class="bg-cover sectionhome w-full text-center max-w-7xl mx-auto px-10 pt-20 pb-52 sm:pb-40 md:pb-24"
+      >
+        <div class="text-white max-w-6xl mx-auto">
+          <h1 class="font-lato font-[400] text-[32px] leading-[38px]">
+            Ervaar hoe het platform zowel jou als mediator, als de betrokken
+            partijen ondersteunt, waardoor het proces gestructureerd en
+            overzichtelijk verloopt.
+          </h1>
+          <p
+            class="font-lato font-[400] text-[20px] leading-[24px] lg:px-40 py-6"
           >
-            <div class="text-white max-w-6xl mx-auto">
-              <h1 class="font-lato font-[400] text-[32px] leading-[38px]">
-                Ervaar hoe het platform zowel jou als mediator, als de betrokken
-                partijen ondersteunt, waardoor het proces gestructureerd en
-                overzichtelijk verloopt.
-              </h1>
-              <p
-                class="font-lato font-[400] text-[20px] leading-[24px] lg:px-40 py-6"
+            Wanneer je een demo aanvraagt dan etiam iaculis lobortis nunc at
+            volutpat. Integer sagittis neque euismod convallis tempus.
+          </p>
+          <div
+            class="flex sm:flex-row flex-col items-center justify-center pt-8 gap-4"
+          >
+            <a href="#" class="">
+              <button
+                class="text-[16px] md:px-[20px] px-[10px] whitespace-nowrap rounded-[2px] py-[14px] md:py-[16px] font-semibold leading-[16px] font-lato bg-white text-[#D95A00]"
               >
-                Wanneer je een demo aanvraagt dan etiam iaculis lobortis nunc at
-                volutpat. Integer sagittis neque euismod convallis tempus.
-              </p>
-              <div
-                class="flex sm:flex-row flex-col items-center justify-center pt-8 gap-4"
-              >
-                <a href="#" class="">
-                  <button
-                    class="text-[16px] md:px-[20px] px-[10px] whitespace-nowrap rounded-[2px] py-[14px] md:py-[16px] font-semibold leading-[16px] font-lato bg-white text-[#D95A00]"
-                  >
-                    Vraag je demo aan
-                  </button>
-                </a>
-                <a
-                  href="#"
-                  class="font-Figtree text-[16px] text-white flex items-center justify-center gap-2 font-semibold leading-[26px]"
-                >
-                  Neem contact op
-                </a>
-              </div>
-            </div>
+                Vraag je demo aan
+              </button>
+            </a>
+            <a
+              href="#"
+              class="font-Figtree text-[16px] text-white flex items-center justify-center gap-2 font-semibold leading-[26px]"
+            >
+              Neem contact op
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-[#F3F6F9] -mt-20 pb-40">
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div class="bg-[#F3F6F9] -mt-40 z-0 py-36">
       <div class="max-w-7xl mx-auto lg:px-4 px-6">
         <div
           class="max-w-5xl mx-auto text-center flex flex-col items-center justify-center"
@@ -575,142 +580,12 @@ async function fetchArticles() {
 const articles = await fetchArticles();
 // console.log(articles.data);
 </script>
-
 <style scoped>
-main {
-  margin: auto;
-  width: 90vw;
-  margin-top: 4em;
-  overflow: hidden;
+.bg {
+  background-image: url(/assets/images/curvedsec.png);
+  height: 100%;
 }
-
-.subheading {
-  position: relative;
-  height: 55vh;
-}
-.subheading::before {
-  content: "";
-  display: none;
-}
-.introductie {
-  margin-top: 2em;
-}
-.listDescription_intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-}
-.opwindende {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em 1em 0 1em;
-  background: #ccd9e5;
-}
-.opwindende > h2 {
-  font-size: 22px;
-  color: #000;
-  font-weight: bold;
-  text-align: center;
-}
-.opwindende > img {
-  object-fit: cover;
-  object-position: center;
-}
-.voordelen {
-  background: #ccd9e5;
-}
-.voordelen > article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-  border-radius: 15px;
-}
-
-.list-items > {
-  list-style: unset;
-}
-/* PC versie */
-@media (min-width: 60em) {
-  .subheading {
-    height: 70vh;
-    margin-bottom: 3em;
-  }
-  .subheading::before {
-    content: "";
-    display: block;
-    width: 101%;
-    height: 20%;
-    background-color: #ffffff;
-    position: absolute;
-    bottom: 6%;
-    left: -0.2%;
-    mask-repeat: no-repeat;
-    mask-position: bottom;
-    mask-size: 100% auto;
-    mask-image: url(../public/icons/download.svg);
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: bottom;
-    -webkit-mask-size: 100% auto;
-    -webkit-mask-image: url(../public/icons/download.svg);
-  }
-  .opwindende > h2 {
-    margin: 1.5em;
-  }
-  .listDescription_intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: unset;
-    padding: 1.5em;
-  }
-
-  .voordelen {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2em;
-    padding: 2em;
-    margin: 0em 0 4em 0;
-  }
-  .voordelen > article {
-    display: flex;
-    flex-direction: column;
-    justify-content: unset;
-    align-items: center;
-    width: 26em;
-    height: auto;
-    padding: 1em;
-    margin: unset;
-  }
-  .voordelen > article > p {
-    padding: 0.3em;
-  }
-
-  .voordelen_img {
-    width: 150px;
-    height: 120px;
-  }
-  .voordelen_img1 {
-    height: 100px;
-    margin-bottom: 1.9em;
-  }
-}
-@media (min-width: 100em) {
-  .subheading::before {
-    content: "";
-    display: block;
-    width: 101%;
-    height: 20%;
-    position: absolute;
-    bottom: 6%;
-    left: -0.2%;
-  }
+.sectionhome {
+  background-image: url(/assets/images/sectionhome.png);
 }
 </style>
